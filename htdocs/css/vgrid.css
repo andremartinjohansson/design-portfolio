@@ -1,0 +1,128 @@
+/**
+ * Responsive Grid
+ */
+/**
+ * A small clearfix:
+ * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
+ */
+/**
+ * Wrap grid in a container.
+ */
+/**
+ * All columns must be wrapped in a row.
+ */
+/**
+ * Create a column spanning @col columns.
+ */
+/**
+ * Push a column @offset columns.
+ */
+/**
+ * Pull a column left @offset columns.
+ */
+/**
+ * Pull a column right @offset columns.
+ */
+.inner-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+html.vgrid .inner-wrap {
+  background: url("../img/grid950x24x30x10-nomargin.png") repeat-y fixed center center;
+  background-size: 100% auto;
+}
+@media (min-width: 960px) {
+  html.vgrid .inner-wrap {
+    background-size: 960px auto;
+  }
+}
+.inner-wrap.inner-wrap-header,
+.inner-wrap.inner-wrap-footer,
+.inner-wrap.inner-wrap-flash {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+html.vgrid .inner-wrap.inner-wrap-header,
+html.vgrid .inner-wrap.inner-wrap-footer,
+html.vgrid .inner-wrap.inner-wrap-flash {
+  background: url("../img/grid950x24x30x10-nomargin.png") repeat-y fixed center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  html.vgrid .inner-wrap.inner-wrap-header,
+  html.vgrid .inner-wrap.inner-wrap-footer,
+  html.vgrid .inner-wrap.inner-wrap-flash {
+    background-size: 100% auto;
+  }
+}
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.site-logo-text {
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 13.02083333%;
+}
+.navbar2 {
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.main {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.main.has-sidebar {
+  display: inline;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  float: left;
+}
+.sidebar {
+  display: inline;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  float: left;
+}
+.footer-column-wrapper {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.footer-column {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.site-footer {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  box-sizing: border-box;
+}
